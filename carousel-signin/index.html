@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>signin carousel</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="swiper">
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="./image/default.avif" />
+            <h2>Crée un compte</h2>
+            <h3>Dites nous qui vous êtes</h3>
+            <input type="text" placeholder="Votre nom" />
+          </div>
+          <div class="swiper-slide">
+            <div className="image-wrapper">
+              <img src="./image/default.avif" />
+            </div>
+            <h2>Information de sécurité</h2>
+            <h3>Entrez un mot de passe</h3>
+            <input type="password" placeholder="Mot de passe" />
+          </div>
+          <div class="swiper-slide">
+            <div className="image-wrapper">
+              <img src="./image/default.avif" />
+            </div>
+            <h2>Inscription terminé</h2>
+            <h3>Vous êtes prêt pour commencer</h3>
+            <button>C'est parti !</button>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+
+  </body>
+</html>
