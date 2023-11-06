@@ -6,7 +6,7 @@ document.getElementById("left").addEventListener("click", function() {
 })
 
 document.getElementById("right").addEventListener("click", function() {
-    toNext()
+    ()
 })
 
 let current = 0;
