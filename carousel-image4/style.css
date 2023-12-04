@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e3dac9; /* Fond beige */
+    color: #574d45; /* Couleur du texte, brun foncé */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 800px; /* Ajuste la largeur maximale du contenu */
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée autour du contenu */
+    background: #e0d5c3; /* Fond beige clair pour le contenu */
+    border-radius: 15px; /* Coins arrondis */
+}
+
+h1 {
+    color: #574d45; /* Brun foncé pour le titre */
+    text-align: center; /* Centrer le texte */
+}
+
+.carousel-container {
+    position: relative;
+    margin-top: 30px;
+    background: #d3bea9; /* Fond brun clair pour le carrousel */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.hover-effect {
+    width: 400px; /* Augmente la taille de l'image */
+    height: auto;
+    margin-right: 30px; /* Marge entre les images agrandie */
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border: 4px solid #574d45; /* Brun foncé pour le contour de l'image */
+    border-radius: 15px; /* Coins arrondis */
+}
+
+.hover-effect:hover {
+    transform: scale(1.1); /* Ajuste l'échelle au survol */
+    filter: grayscale(50%); /* Change la couleur au survol */
+}
+
+.carousel-navigation {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 15px; 
+    color: #574d45;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px; 
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    background: #8e7f71; 
+    border-radius: 50%;
+    margin: 0 8px; 
+    cursor: pointer;
+}
+
+.indicator.active {
+    background: #574d45;
+}
